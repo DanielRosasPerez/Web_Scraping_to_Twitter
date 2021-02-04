@@ -32,9 +32,9 @@ user_xpath = "//input[@name='session[username_or_email]']"
 password_xpath = "//input[@name='session[password]']"
 button_xpath = "//span[text()='Iniciar sesión']"
 
-# POINT NUMBER "2".
-user = "@DanielR96234308"
-passwd = "guitarras5"
+# POINT NUMBER "2". IN ORDER FOR THIS CODE TO WORK, PLEASE, INSERT THE DATA REQUESTED BELOW:
+user = "INSERT YOUR TWITTER @USERNAME HERE"
+passwd = "INSERT YOUR TWITTER PASSWORD HERE"
 
 user_block = WebDriverWait(driver, 10).until( # We wait up to 10seconds for the user block to load. Whenever it loads, immediatly we retrieve it.
                     EC.presence_of_element_located((By.XPATH, user_xpath))
